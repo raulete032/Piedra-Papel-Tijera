@@ -1,0 +1,128 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#container{
+    width: 80%;
+    height: 70%;
+    border: 1px solid black;
+    display: flex;
+}
+
+
+#me, #computer{
+    width: 50%;
+    height: 100%;    
+    display: flex;
+    background-color: azure;
+    flex-direction: column;
+}
+
+#computer, #myHand{
+    justify-content: center;
+    align-items: center;
+}
+
+#myHand img, #computer img{
+    width: 40%;
+}
+
+#myHand{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#divButtons{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+    padding-top: 10px;   
+    border-right: 1px solid black;
+}
+
+
+#divButtons button{
+    width: 15%;
+    height: 60%;
+}
+
+#divButtons button img{
+    width: 100%;
+}
+
+#marcador{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+}
+
+#marcador h1:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#marcador h1:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#marcador h1:nth-of-type(3){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#marcador h1:nth-of-type(4){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#marcador h1:nth-of-type(5){
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#countdown{
+    position: absolute;
+    z-index: -1;
+}
+
+#countdown h1{
+    font-size: 5em;
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+
+    h1{
+        font-size: 20px;
+    }
+    
+    #countdown h1{
+        font-size: 2em;
+    }
+}

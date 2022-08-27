@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/index.js" defer></script>
+
+    <title>Piedra Pepel Tijera</title>
+</head>
+<body>
+    <h1>Elije entre Piedra, Papel o Tijera</h1>
+    <div id="container">
+        
+        <div id="me">
+            <div id="myHand">
+                <img id="myElection" src="./img/paperPlayer.png" alt="" style="visibility: hidden;">
+            </div>
+            <div id="divButtons">
+                <button id="bStone"><img src="./img/stonePlayer.png" alt=""></button>
+                <button id="bPaper"><img src="./img/paperPlayer.png" alt=""></button>
+                <button id="bScissors"><img src="./img/scissorsPlayer.png" alt=""></button>
+            </div>
+        </div>
+
+        <div id="computer">
+            <img id="pcElection" src="./img/paperPC.png" alt="" style="visibility: hidden;">
+        </div>
+    </div>
+    <div id="marcador">
+        <h1>Jugador</h1>
+        <h1>Marcador</h1>
+        <h1>PC</h1>
+        <h1 id="pointsPlayer">0</h1>
+        <h1 id="pointsPC">0</h1>
+    </div>
+
+    <div id="countdown">
+        <h1></h1>
+    </div>
+    
+    
+</body>
+</html>
